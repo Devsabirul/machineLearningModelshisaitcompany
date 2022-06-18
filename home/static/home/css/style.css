@@ -48,6 +48,17 @@ button.button_ {
 }
 
 
+button.button_ {
+    width: 150px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 25px;
+    border: none;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+
 .footer_ {
     background: #212529;
     color: white;
@@ -55,6 +66,7 @@ button.button_ {
     margin-top: 50px;
     height: 50px;
 }
+
 
 .footer_ p {
     color: gray;
