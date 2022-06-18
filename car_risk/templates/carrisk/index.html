@@ -1,0 +1,34 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Car Risk Prediction{% endblock title %}
+{% static 'car_risk/css/style.css' %}
+{% block body %}
+<div class="wapper">
+    <div class="car_image">
+        <img src="{% static 'car_risk/images/car_risk.jpg' %}" alt="banner">
+    </div>
+    <div class="heading">
+        <h1 class="text-center pt-4">Car Driving Risk - Predict <span>(Machine Learning)</span></h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="form_wraper mb-5">
+            <form action="car_result">
+                <div class="form-group">
+                    <label for="speed">Car Speed :</label>
+                    <input type="number" class="form-control" id="speed" name="speed" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Car age :</label>
+                    <input type="number" class="form-control" id="age" name="car_age" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience :</label>
+                    <input type="number" class="form-control" id="experience" name="experience" required>
+                </div>
+                <button type='submit' class="w-100 btn btn-danger mt-2" id="predict_carrisk">Predict</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

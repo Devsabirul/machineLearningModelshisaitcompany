@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,600&family=Rubik:wght@500&family=Secular+One&display=swap');
+
+/* carpage */
+.car_image img {
+    width: 99%;
+    height: 100%;
+}
+
+.heading h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Secular One', sans-serif;
+    color: #900054;
+}
+
+.heading hr {
+    width: 50%;
+    margin: 0 auto;
+    height: 1px;
+    color: rgb(0 0 0);
+    margin-bottom: 5px;
+}
+
+.form_wraper {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.car_result p {
+    font-weight: bold;
+    color: green;
+}

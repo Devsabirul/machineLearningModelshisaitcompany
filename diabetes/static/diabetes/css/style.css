@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,600&family=Rubik:wght@500&family=Secular+One&display=swap');
+
+/* carpage */
+.car_image img {
+    width: 99%;
+    height: 100%;
+}
+
+.his_heading h1 {
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+}
+.his_heading img{
+    width: 24%;
+    height: 100%;
+    display: inline-block;
+    margin-left: 37%;
+}
+.wrapper{
+    border: 1px solid gray;
+    width: 60%;
+    margin: 0 auto !important;
+    margin-top: 60px !important;
+    margin-bottom: 20px !important;
+}
+.main_contant table{
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.main_contant table td{
+    padding: 3px !important;
+}
+.table-secondary{
+    background-color: rgb(173 239 239 / 25%);
+}
+.table-result{
+    background-color: #ff00004d;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+}
+.link{
+    color: #0d6efd;
+    padding-bottom: 18px;
+}

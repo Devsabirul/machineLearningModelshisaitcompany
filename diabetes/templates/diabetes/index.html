@@ -1,0 +1,54 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Diabetes Prediction{% endblock title %}
+{% block body %}
+<div class="wapper">
+    <div class="car_image">
+        <img src="{% static 'diabetes/images/diabetes.jpg' %}" alt="banner">
+    </div>
+    <div class="heading">
+        <h1 class="text-center pt-4"> Diabetes - Predict <span>(Machine Learning)</span></h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="form_wraper">
+            <form action="diabetes_result" class="">
+                <div class="form-group">
+                    <label for="pregnancies">Pregnancies :</label>
+                    <input type="number" class="form-control mt-1" id="pregnancies" name="pregnancies" required>
+                </div>
+                <div class="form-group">
+                    <label for="glucose">Glucose :</label>
+                    <input type="number" class="form-control mt-1" id="glucose" name="glucose" required>
+                </div>
+                <div class="form-group">
+                    <label for="blodPressure">BlodPressure :</label>
+                    <input type="number" class="form-control mt-1" id="blodPressure" name="blodPressure" required>
+                </div>
+                <div class="form-group">
+                    <label for="skinThickness">SkinThickness :</label>
+                    <input type="number" class="form-control mt-1" id="skinThickness" name="skinThickness" required>
+                </div>
+                <div class="form-group">
+                    <label for="insulin">Insulin :</label>
+                    <input type="number" class="form-control mt-1" id="insulin" name="insulin" required>
+                </div>
+                <div class="form-group">
+                    <label for="bmi">BMI :</label>
+                    <input type="text" class="form-control mt-1" id="bmi" name="bmi" required>
+                </div>
+                <div class="form-group">
+                    <label for="diabetesPedigreeFunction">Diabetes Pedigree Function :</label>
+                    <input type="text" class="form-control mt-1" id="diabetesPedigreeFunction"
+                        name="dpfc" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age :</label>
+                    <input type="number" class="form-control mt-1" id="age" name="age" required>
+                </div>
+                <button type='submit' class="w-100 btn btn-danger mt-2" id="predict_carrisk">Predict</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

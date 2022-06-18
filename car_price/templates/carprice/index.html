@@ -1,0 +1,124 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Car price Prediction{% endblock title %}
+{% block body %}
+<div class="wapper">
+    <div class="car_image">
+        <img src="{% static 'carprice/images/car_price.jpg' %}" alt="banner">
+    </div>
+    <div class="heading">
+        <h1 class="text-center pt-4">Car Price - Predict <span>(Machine Learning)</span></h1>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="form_wraper">
+            <form action="car_price_result">
+                <div class="row">
+                    {% comment %} carname {% endcomment %}
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="form-group p-1 ">
+                            <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="carname" required>
+                                <option selected disabled="true" >Car Name</option>
+                                <option value="1">alfa-romero Quadrifoglio </option>
+                                <option value="2">alfa-romero giulia</option>
+                                <option value="3">alfa-romero stelvio</option>
+                                <option value="26">chevrolet vega 2300 </option>
+                                <option value="5">audi 100ls</option>
+                                <option value="60">mazda rx-7 gs</option>
+                                <option value="50">jaguar xk</option>
+                                <option value="47">isuzu MU-X</option>
+                                <option value="9">audi fox</option>
+                                <option value="10">bmw 320i</option>
+                                <option value="12">bmw x3</option>
+                                <option value="109">subaru r2</option>
+                                <option value="223">toyota corona mark ii</option>
+                                <option value="120">toyota corona</option>
+                                <option value="143">volvo 264gl</option>
+                                <option value="140">volvo 244dl	</option>
+                                <option value="135">volkswagen rabbit custom</option>
+                                <option value="107">subaru dl</option>
+                                <option value="110">subaru trezia</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        {% comment %} fueltype {% endcomment %}
+                    <div class="form-group p-1">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="fueltype">
+                            <option selected disabled="true" >Fuel Type</option>
+                            <option value="1">Gas</option>
+                            <option value="0">Diesel</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                         {% comment %} doornumber {% endcomment %}
+                            <div class="form-group p-1 ">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="doornumber">
+                                    <option selected disabled="true" >Door Numberb</option>
+                                    <option value="1">Two</option>
+                                    <option value="0">Four</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        {% comment %} car body {% endcomment %}
+                    <div class="form-group p-1 ">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="carbody">
+                            <option selected disabled="true" >Car Body</option>
+                            <option value="0">convertible</option>
+                            <option value="1">hardtop</option>
+                            <option value="2">hatchback</option>
+                            <option value="3">sedan</option>
+                            <option value="4">wagon</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12">
+                        {% comment %} enginelocation {% endcomment %}
+                            <div class="form-group p-1 ">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="enginelocation" required>
+                                    <option selected disabled="true" >Engine Location</option>
+                                    <option value="1">rear</option>
+                                    <option value="0">front</option>
+                                </select>
+                            </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        {% comment %} wheelbase {% endcomment %}
+                        <div class="form-group p-1 ">
+                            <input type="number" class="form-control" id="wheelbase" name="wheelbase" placeholder="wheelbase" required >
+                         </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group p-1 ">
+                            <input type="number" class="form-control" id="carlength" name="carlength" placeholder="carlength" required >
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group p-1 ">
+                            <input type="number" class="form-control" id="carwidth" name="carwidth" placeholder="carwidth" required >
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="form-group p-1 ">
+                            <input type="number" class="form-control" id="carheight" name="carheight" placeholder="carheight" required >
+                        </div>
+                    </div>
+                     <div class="col-lg-12 col-sm-12">
+                        <div class="form-group p-1 ">
+                            <input type="number" class="form-control" id="enginesize" name="enginesize" placeholder="enginesize" required >
+                        </div>
+                    </div>
+                </div>
+                <button type='submit' class="w-100 btn btn-danger mt-2" id="predict_carrisk">Predict</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock body %}

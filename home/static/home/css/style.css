@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:ital,wght@1,600&family=Rubik:wght@500&family=Secular+One&display=swap');
+
+
+.cover_image {
+    background-image: url('../images/home_cover.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.contant h1 {
+    font-size: 65px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.contant p {
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.button_.btn-success {
+    background-color: #ff4949;
+}
+
+.button_.btn-success:hover {
+    background-color: #0000ff;
+}
+
+button.button_.btn.btn-primary {
+    background-color: #0000ff;
+}
+
+button.button_.btn.btn-primary:hover {
+    background-color: #ff4949;
+}
+
+button.button_ {
+    width: 150px;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 25px;
+    border: none;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+
+.footer_ {
+    background: #212529;
+    color: white;
+    font-weight: 400;
+    margin-top: 50px;
+    height: 50px;
+}
+
+.footer_ p {
+    color: gray;
+}
+
+.footer_ a {
+    color: gray;
+}
+
+
+/* rasponsivness */
