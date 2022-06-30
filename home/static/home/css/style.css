@@ -59,6 +59,44 @@ button.button_ {
 }
 
 
+.featur_content {
+    width: 50%;
+}
+
+.featur_content h6 {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+.featur_content h1 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.featur_content p {
+    color: gray;
+}
+
+p.card_icon svg {
+    color: #0000ff;
+    font-size: 35px;
+    padding-left: 10px
+}
+
+h4.featur_car_title {
+    color: #0000ff;
+    line-height: 35px;
+}
+
+a.feature_card_link {
+    text-decoration: none;
+    color: #0067ff !important;
+    padding: 0px;
+}
+
+/* footer section */
+
+
 .footer_ {
     background: #212529;
     color: white;
