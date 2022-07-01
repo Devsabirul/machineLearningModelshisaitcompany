@@ -3,30 +3,30 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Diabetes predicted result </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Diabetes predicted result </title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  {% comment %} css link {% endcomment %}
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'car_risk/css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'carprice/css/style.css' %}">
+    {% comment %} css link {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'car_risk/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'carprice/css/style.css' %}">
 
 </head>
 
 <body>
-      {% comment %} body section {% endcomment %}
+    {% comment %} body section {% endcomment %}
 
     <div class="wrapper p-4 ">
         <div class="his_heading">
             <img src=" {% static 'carprice/images/shisa_black.png' %} " alt="logo">
             <h1 class="text-center ">Diabetes - Predicted history</h1>
-            <hr/>
+            <hr />
         </div>
         <div class="main_contant text-center">
             <table>
@@ -38,12 +38,12 @@
                 <tr>
                     <td class="text-start">Glucose: </td>
                     <td></td>
-                    <td class="text-start" >{{glucose}} </td>
+                    <td class="text-start">{{glucose}} </td>
                 </tr>
                 <tr class="table-secondary">
                     <td class="text-start">Blod Pressure : </td>
                     <td></td>
-                    <td class="text-start" >{{blodPressure}} </td>
+                    <td class="text-start">{{blodPressure}} </td>
                 </tr>
                 <tr>
                     <td class="text-start">Skin Thickness : </td>
@@ -71,28 +71,31 @@
                     <td class="text-start">{{age}} </td>
                 </tr>
                 <tr class="table-result">
-                    <td class="text-start">Diabetes  : </td>
+                    <td class="text-start">Diabetes : </td>
                     <td></td>
                     <td class="text-start">{{result}} </td>
                 </tr>
             </table>
             <hr>
+            <div class="btn btn-success w-100" id="print_btn">Print</div>
             <div class="link">
-                <span class="float-start">thank you. it's designed by <a href="https://www.facebook.com/devsabirul80" target = "blank">shisa it company</a></span>  <span class="float-end"><a href="/diabetes_predict">try again!</a></span>
-           </div>
+                <span class="float-start">thank you. it's designed by <a href="https://www.facebook.com/devsabirul80"
+                        target="blank">shisa it company</a></span> <span class="float-end"><a
+                        href="/diabetes_predict">try again!</a></span>
+            </div>
         </div>
-</div>
+    </div>
 
 
-  <!--  Separate Popper and Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <script src="{% static 'car_risk/js/index.js' %}"></script>
+    <!--  Separate Popper and Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="{% static 'car_risk/js/result.js' %}"></script>
 </body>
 
 </html>

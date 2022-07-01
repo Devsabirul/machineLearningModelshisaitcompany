@@ -28,4 +28,6 @@ urlpatterns = [
     path('car_price_result', car_price_predicted, name='carprice'),
     path('diabetes_predict', include('diabetes.urls')),
     path('diabetes_result', diabetes_result, name='diabetes_result'),
+    path('about', include('about.urls')),
+    path('community', include('community.urls')),
 ]
