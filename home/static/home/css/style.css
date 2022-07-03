@@ -21,6 +21,12 @@
     line-height: 30px;
 }
 
+.icon_card {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #0000ff;
+}
+
 .button_.btn-success {
     background-color: #ff4949;
 }
